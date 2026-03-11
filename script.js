@@ -1,4 +1,3 @@
-import React from "react";
 
 const KNOWLEDGE_BASE = [
   {
@@ -297,7 +296,7 @@ function PPTModal({ open, onClose, payload }) {
   );
 }
 
-export default function SalesOSDemo() {
+function SalesOSDemo() {
   const [issue, setIssue] = React.useState("");
   const [industry, setIndustry] = React.useState("小売・流通");
   const [department, setDepartment] = React.useState("営業");
@@ -508,3 +507,7 @@ export default function SalesOSDemo() {
     </div>
   );
 }
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <SalesOSDemo />
+);
